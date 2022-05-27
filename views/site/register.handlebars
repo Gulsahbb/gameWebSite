@@ -1,0 +1,22 @@
+<title>Sign Up</title>
+<div class="registration-form">
+    <h1>Registeration Form</h1>
+    <form action="/users/register" method="POST">
+        <p>Full Name</p>
+        <input type="text" name="fullname" placeholder="Full Name">
+        <p>User Name</p>
+        <input type="text" name="username" placeholder="User Name">
+        <p>Email</p>
+        <input type="email" name="email" placeholder="Email">
+        <p>Password:</p>
+        <input type="password" name="password" placeholder="Password">
+        <button type="submit">Registeration</button>
+
+        <div class="loginway" action="/signin">
+            <p>Do you have an account? <a href="/users/signin"> Sign In</a></p>
+        </div>
+
+    </form>
+</div>
+
+<div class="main"></div>

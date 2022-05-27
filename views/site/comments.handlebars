@@ -1,0 +1,56 @@
+<title>Comments</title>
+<section id="comments">
+    <div class="comment-box">
+        <h2>Comments</h2>
+        <form action="/comments/test" method="POST">
+            <input type="text" name="username" placeholder="Username*">
+            <input type="text" name="title" placeholder="About*">
+            <textarea name="comment" placeholder="Type Your Comments"></textarea>
+            <button type="submit">Submit Comment</button>
+        </form>
+    </div>
+</section>
+
+<section id="comments-page">
+
+    <div class="comments-heading">
+        <div class="comments-box-container">
+            {{#each posts}}
+            <!-- Kutu 1-->
+            <div class="comments-box">
+                <!--üst kısım-->
+                <div class="box-top">
+                    <!--profil-->
+                    <div class="profile-img">
+                        <!--img-->
+                        <img src="images/user1.jpg" />
+                    </div>
+                    <!--Resim için 18.video-->
+                    <!--name and surname-->
+                    <div class="name-user">
+                        <h6>@{{username}}</h6>
+                        <p>KONU: {{title}}</p>
+                        <p>{{generateDate date 'MMM DD YYYY'}}</p>
+                    </div>
+
+                    <!--reviews-->
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <!--boş yıldız-->
+                    </div>
+                </div>
+
+                <!--Comments-->
+                <div class="user-comments">
+                    <p>{{comment}}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    {{/each}}
+</section>

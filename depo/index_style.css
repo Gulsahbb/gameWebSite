@@ -1,0 +1,127 @@
+h1{
+    color: #F5F5DC;
+    font-size: 30px;
+
+}
+a{
+    text-decoration: none;
+    color: #F5F5DC;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #217772;
+    font-size: 10px;
+}
+#navigationbar{
+    background-color: #FA9F42;
+    color: #4b4949;
+    display: flex; 
+    justify-content:space-between;
+    align-items: center;
+    padding:20px;
+    height: 100px;
+    font-size: 15px;
+}
+#navigationbar ul{
+    list-style-type: none; 
+    display: flex;
+    align-items: center;
+    
+}
+#navigationbar ul li a {
+    display: block;
+    padding: 40px;   
+} 
+#navigationbar ul li a:hover {
+    color: #4b4949;
+    background: #F5F5DC;
+     
+} 
+.main{
+    background-color: #217772;
+    height: 450px;
+}
+#slider img{
+    width: 1364px;
+    opacity: 0.4;
+}
+.slider{
+    position: relative;
+}
+.yazi{
+    position: absolute;
+    font-size: 40px;
+    padding-left: 140px;
+    padding-top: 380px;
+    left:5px;
+    top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.yazi2{
+    position: absolute;
+    font-size: 40px;
+    padding-left: 140px;
+    padding-top: 380px;
+    left:5px;
+    top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.image{
+    position: relative;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.image img{
+    padding-left: 1px;
+    border-style: inherit;
+    position: static;
+    font-size: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.image img:hover{
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+.topwrite{
+    position:absolute;
+    left:100px;
+    top:170px;
+    font-size: 15px;
+    opacity: 0.0;
+}
+.topwrite:hover{
+    opacity: 1;
+    color: antiquewhite;
+    background-color: #898686;
+}
+
+footer{
+    background: #FA9F42;
+    text-align: center;
+    color: #F5F5DC;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+footer ul{
+    list-style-type: square;
+    position: absolute;
+    padding-left: 650px;
+    justify-content:space-between;
+    align-items: center;
+}
+footer p{
+    padding-top: 80px;
+}
+

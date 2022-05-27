@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* HOME PAGE */
+body{
+    line-height: 1.1;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+    color: #F5F5DC;
+    background-color: #217772;
+}
+
+
+*{
+    padding: 0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+   
+}
+
+/*HEADER */
+
+.header{
+    width: 100%;
+    height: 120px;
+    display: block;
+
+}
+
+.in_header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color:#FA9F42;
+    justify-content: space-between;
+}
+
+.logo_container{
+    height: 100%;
+    display: table; 
+    justify-content:space-between;
+    align-items: center;
+    padding:10px;
+    float: left;
+}
+
+.logo_container h1{
+    color: #F5F5DC;
+    height: 100%;
+    display: table-cell;
+    vertical-align:middle;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.navigation{
+    float: right;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.navigation li{
+     display: table;
+     float: left;
+     text-decoration: none;
+    
+}
+
+.navigation li a{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #F5F5DC;
+    padding: 40px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.navigation li a:hover{
+    color: #4b4949;
+    background: #F5F5DC;
+}
+
+/* PICTURE */
+.main{
+    background-color: #217772;
+    height: 500px;
+}
+#slider img{
+    width:100%;
+    opacity: 0.4;
+}
+.slider{
+    position: relative;
+}
+.yazi{
+    position: absolute;
+    font-size: 40px;
+    padding-left: 140px;
+    padding-top: 380px;
+    left:5px;
+    top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #F5F5DC;
+}
+.yazi2{
+    position: absolute;
+    font-size: 40px;
+    padding-left: 140px;
+    padding-top: 380px;
+    left:5px;
+    top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #F5F5DC;
+}
+
+/* GAMES PAGE */
+.image{
+    position: relative;
+    padding-left: 110px;
+    padding-top: 10px;
+}
+
+.image img{
+    padding-left: 1px;
+    border-style: inherit;
+    position: static;
+    font-size: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.image img:hover{
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+/* COMMENTS PAGE */
+.comment-box{
+    top:400px;
+    left:1000px;
+    position:absolute;
+    transform:translate(-50%, -50%);
+    width:500px;
+    background-color: #185c58;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.comment-box h2{
+    font: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #F5F5DC;
+}
+
+.comment-box input{
+    width: 100%;
+    height: 50px;
+    padding:0 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #F5F5DC;
+    background-color: #F5F5DC;
+}
+
+.comment-box input:focus{
+    border: 1px solid #000;
+    outline: 0;
+}
+
+.comment-box textarea{
+    width: 100%;
+    height: 150px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #F5F5DC;
+    background-color: #F5F5DC;
+}
+
+.comment-box textarea:focus{
+    border: 1px solid #000;
+    outline: 0;
+}
+
+.comment-box button{
+    border: 0;
+    padding: 10px 30px;
+    background-color: #898686;
+    font: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #F5F5DC;
+}
+
+.comment-box button:hover{
+    background-color: #4b4949;
+}
+
+/*Comments page with other people */
+
+#comments-page{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+.comments-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    pad: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+/* 
+.comments-heading h1{
+    font-size: 10px;
+    font-weight: 500;
+    background-color: #4b4949;
+    color: #F5F5DC;
+    padding: 10px 20px;
+}
+
+.comments-heading h6{
+    font-size: 9px;
+    margin-bottom: 10px;
+    color: #F5F5DC;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+*/
+.comments-box-container{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.comments-box{
+    width: 615px;
+    background-color: #F5F5DC;
+    padding: 20px;
+    margin: 30px;
+    cursor: pointer;
+    border-radius: 5px;   
+}
+
+.comments-box:hover{
+    transform: translateY(-10px);
+    transition: all 0.3s ease ;
+}
+
+
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+    padding-right: 300px;
+    
+}
+.name-user h6{
+    color: #4b4949;
+    font-size: 13px;
+    letter-spacing: 0 5px;
+}
+.name-user p{
+    color: #4b4949;
+    font-size: 10px;
+}
+
+.reviews{
+    color: rgba(247, 251, 33, 0.938);
+}
+
+.user-comments p{
+    font-size: 10px;
+    color: #4b4949;
+}
+
+/* SIGN IN PAGE */
+
+
+.login-form{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 340px;
+    background-color: #185c58;
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+.login-form h1{
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.login-form p{
+    font-size: 10px;
+    margin: 15px 0;
+}
+
+.login-form input{
+    font-size: 14px;
+    padding: 8px 5px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+}
+
+.login-form button{
+    font-size: 18px;
+    font-weight: bold;
+    color: #F5F5DC;
+    margin: 15px 0;
+    padding: 10px 15px;
+    width: 50%;
+    border: 0;
+    border-radius: 5px;
+    background-color: #4b4949;
+}
+
+.login-form button:hover{
+    background-color: #898686;
+    color: #F5F5DC(60, 56%, 91%);
+}
+
+.login-form input:focus{
+    border: 1px solid #000;
+    outline: 0;
+}
+
+.login-form div p{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.login-form div p a{
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FA9F42;
+}
+
+
+/* SIGN UP PAGE */
+
+.registration-form{
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    background-color: #185c58;
+    padding: 15px;
+    border-radius: 10px;
+}
+.registration-form h1{
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.registration-form p{
+    font-size: 10px;
+    margin: 15px 0;
+}
+
+.registration-form input{
+    font-size: 14px;
+    padding: 8px 5px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+}
+
+.registration-form button{
+    font-size: 18px;
+    font-weight: bold;
+    color: #F5F5DC;
+    margin: 15px 0;
+    padding: 10px 15px;
+    width: 50%;
+    border: 0;
+    border-radius: 5px;
+    background-color: #4b4949;
+}
+
+.registration-form button:hover{
+    background-color: #898686;
+    color: #F5F5DC(60, 56%, 91%);
+}
+
+.registration-form input:focus{
+    border: 1px solid #000;
+    outline: 0;
+}
+
+.registration-form div p{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.registration-form div p a{
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FA9F42;
+} 
+
+/* COMMUNICATION PAGE */
+
+.comm-container{
+    padding-top: 110px;
+    padding-left: 200px;
+    justify-content: center;
+    
+}
+
+.comm-container h1{
+    
+    text-align: center;
+    padding-top: 40px;
+
+} 
+.comm-form{
+    position:absolute;
+    transform: translate(-20%,-20%);
+    width: 500px;
+    background-color: #185c58;
+    padding: 15px;
+    border-radius: 10px;
+} 
+
+.comm-form p{
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.comm-form input{
+    font-size: 14px;
+    padding: 8px 5px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    background-color: #F5F5DC;
+    
+}
+
+.comm-form textarea{
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+    border: 1px solid #F5F5DC;
+    background-color: #F5F5DC;
+}
+.comm-form button{
+    font-size: 18px;
+    font-weight: bold;
+    color: #F5F5DC;
+    margin: 15px 0;
+    padding: 10px 15px;
+    width: 50%;
+    border: 0;
+    border-radius: 5px;
+    background-color: #4b4949;
+    position: relative;
+}
+
+.comm-form button:hover{
+    background-color: #898686;
+    color: #F5F5DC(60, 56%, 91%);
+}
+
+.comm-form input:focus{
+    border: 1px solid #000;
+    outline: 0;
+}
+
+.comm-form textarea:focus{
+    border: 1px solid #000;
+    outline: 0;
+}
+
+.comm-contact{
+    margin-bottom: 50px;
+    padding-left: 700px;
+}
+
+.comm-contact section{
+    padding: 10px;
+    margin: 20px;
+    margin-right: 50px;
+    background-color: #185c58;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 400px;
+    height: 100px;
+    position: relative;
+    left: 200px;
+
+}
+
+.comm-contact section:hover{
+    transform: translateX(10px);
+    transition: all 0.3s ease ;
+    background-color: #F5F5DC;
+    color: #4b4949;
+}
+
+.comm-contact section i{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #F5F5DC;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #4b4949;
+    transition: all 0.3s ease;
+
+}
+
+.comm-contact section i:hover{
+    background-color: #4b4949;
+    color: #F5F5DC;
+}
+
+
+/* FOOTER */
+
+.container{
+    max-width: 100%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+
+.footer{
+    height: 160px;
+    background-color: #FA9F42;
+    padding : 10px 0;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 50px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #F5F5DC;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #F5F5DC;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 4px;
+}
+
+.footer-col ul li a{
+    font-size: 11px;
+    text-transform: capitalize;
+    color: #F5F5DC;
+    text-decoration: none;
+    font-weight: 300;
+    color: #F5F5DC;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #4b4949;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #4b4949;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #F5F5DC;
+    transition: all 0.3s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #4b4949;
+    background-color: #F5F5DC;
+}
+
+/* ??????????????????????????????????????*/
+@media (max-width: 1080px){
+
+    .header{
+        width: 100%;
+        height: 100%;
+    }
+   /*  .in_header{
+        width: 100%;
+        height: 100%;
+    } */
+    .navigation{
+        width: 100%;
+        height: 100%;
+    }
+    .footer{
+        width: 100%;
+        height: 100%;
+    }
+    .footer-col{
+        width: 100%;
+        height: 100%;
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+    }
+
+    
+}
